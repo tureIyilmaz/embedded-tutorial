@@ -1,0 +1,4 @@
+1687898075254	Rename resource '001'
+1688114573246	Rename resource '001_HAL_SystemClockConfig'
+1688114592845	Rename resource '001_HAL_LED_Blink'
+1688114760995	Delete resource '002_LED_BLINK'

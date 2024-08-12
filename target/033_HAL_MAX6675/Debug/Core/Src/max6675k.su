@@ -1,0 +1,2 @@
+../Core/Src/max6675k.c:12:9:MAX6675K_ReadRegisters	24	static
+../Core/Src/max6675k.c:34:7:MAX6675K_ReadTemp	16	static

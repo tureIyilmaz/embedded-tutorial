@@ -1,0 +1,10 @@
+00:11:21 **** Incremental Build of configuration Debug for project 031_HAL_HEX-KEYPAD_with_NOKIA5110 ****
+make -j12 all 
+arm-none-eabi-size   031_HAL_HEX-KEYPAD_with_NOKIA5110.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19996	     20	   2332	  22348	   574c	031_HAL_HEX-KEYPAD_with_NOKIA5110.elf
+Finished building: default.size.stdout
+ 
+
+00:11:22 Build Finished. 0 errors, 0 warnings. (took 410ms)
+

@@ -1,0 +1,80 @@
+
+#include "stm32f4xx.h"
+#include "stm32f4_discovery.h"
+
+void GPIO_Config(void);
+void delay_ms(uint16_t);
+void fullStep(void);
+
+GPIO_InitTypeDef GPIO_InitStruct;
+
+int i = 0, j = 0;
+uint16_t dizi[8] = {GPIO_Pin_6, GPIO_Pin_6 | GPIO_Pin_7, GPIO_Pin_7, GPIO_Pin_7 | GPIO_Pin_8,
+		GPIO_Pin_8, GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_9, GPIO_Pin_9 |GPIO_Pin_6}, count;
+
+
+int main(void)
+{
+	GPIO_Config();
+
+
+  while (1)
+  {
+	  fullStep();
+  }
+}
+void fullStep()
+{
+	SysTick_Config(SystemCoreClock / 1000);
+
+	for(i = 0; i < 512; i++)
+	{
+		for(j = 0; j < 8; j++)
+		{
+			GPIO_SetBits(GPIOC, dizi[j]);
+			GPIO_ResetBits(GPIOC, dizi[(j + 1) % 8]);
+			GPIO_ResetBits(GPIOC, dizi[(j + 2) % 8]);
+			GPIO_ResetBits(GPIOC, dizi[(j + 3) % 8]);
+			GPIO_ResetBits(GPIOC, dizi[(j + 4) % 8]);
+			GPIO_ResetBits(GPIOC, dizi[(j + 5) % 8]);
+			GPIO_ResetBits(GPIOC, dizi[(j + 6) % 8]);
+			GPIO_ResetBits(GPIOC, dizi[(j + 7) % 8]);
+
+			 delay_ms(15);
+		}
+	}
+
+}
+
+
+
+void GPIO_Config(void)
+{
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+
+	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_8 | GPIO_Pin_9;
+	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
+
+	GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+}
+
+void delay_ms(uint16_t time)
+{
+	count = time;
+	while(count);
+}
+
+void EVAL_AUDIO_TransferComplete_CallBack(uint32_t pBuffer, uint32_t Size){
+  /* TODO, implement your code here */
+  return;
+}
+
+
+uint16_t EVAL_AUDIO_GetSampleCallBack(void){
+  /* TODO, implement your code here */
+  return -1;
+}

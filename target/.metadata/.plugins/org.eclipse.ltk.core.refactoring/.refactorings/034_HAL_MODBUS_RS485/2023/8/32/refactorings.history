@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;034_HAL_MODBUS_RS485/Core/Inc/modebus.h&apos; to &apos;modbus.h&apos;" description="Rename resource &apos;modebus.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/modebus.h" name="modbus.h" stamp="1691752431570" updateReferences="true"/>
+</session>

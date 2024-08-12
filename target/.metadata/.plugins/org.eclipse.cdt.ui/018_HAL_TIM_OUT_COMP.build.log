@@ -1,0 +1,10 @@
+10:48:43 **** Incremental Build of configuration Debug for project 018_HAL_TIM_OUT_COMP ****
+make -j12 all 
+arm-none-eabi-size   018_HAL_TIM_OUT_COMP.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9384	     20	   1644	  11048	   2b28	018_HAL_TIM_OUT_COMP.elf
+Finished building: default.size.stdout
+ 
+
+10:48:44 Build Finished. 0 errors, 0 warnings. (took 431ms)
+

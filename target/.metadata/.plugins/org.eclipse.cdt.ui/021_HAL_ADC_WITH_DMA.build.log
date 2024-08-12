@@ -1,0 +1,10 @@
+19:32:28 **** Incremental Build of configuration Debug for project 021_HAL_ADC_WITH_DMA ****
+make -j12 all 
+arm-none-eabi-size   021_HAL_ADC_WITH_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10260	     20	   1748	  12028	   2efc	021_HAL_ADC_WITH_DMA.elf
+Finished building: default.size.stdout
+ 
+
+19:32:29 Build Finished. 0 errors, 0 warnings. (took 420ms)
+

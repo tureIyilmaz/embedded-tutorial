@@ -1,0 +1,10 @@
+14:19:49 **** Incremental Build of configuration Debug for project 040MOD ****
+make -j12 all 
+arm-none-eabi-size   040MOD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12532	     20	   3956	  16508	   407c	040MOD.elf
+Finished building: default.size.stdout
+ 
+
+14:19:49 Build Finished. 0 errors, 0 warnings. (took 399ms)
+

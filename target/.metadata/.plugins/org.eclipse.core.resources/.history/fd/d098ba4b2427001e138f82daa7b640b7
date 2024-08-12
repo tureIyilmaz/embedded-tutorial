@@ -1,0 +1,10 @@
+/*
+ * nokia510.h
+ *
+ *  Created on: Jul 20, 2023
+ *      Author: turel
+ */
+
+
+extern SPI_HandleTypeDef hspi2;
+extern DMA_HandleTypeDef hdma_spi2_tx;

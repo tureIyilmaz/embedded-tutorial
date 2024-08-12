@@ -1,0 +1,10 @@
+13:30:28 **** Incremental Build of configuration Debug for project STM32F407_JOYSTICK ****
+make -j12 all 
+arm-none-eabi-size   STM32F407_JOYSTICK.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9412	     20	   1740	  11172	   2ba4	STM32F407_JOYSTICK.elf
+Finished building: default.size.stdout
+ 
+
+13:30:28 Build Finished. 0 errors, 0 warnings. (took 350ms)
+

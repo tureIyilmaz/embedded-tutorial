@@ -1,0 +1,4 @@
+#Mon Aug 21 00:09:11 TRT 2023
+expression=HAL_UART_Transmit_DMA
+org.eclipse.help.ui.localSearch.master=true
+__DEFAULT__=false

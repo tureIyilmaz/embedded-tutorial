@@ -1,0 +1,10 @@
+09:16:35 **** Incremental Build of configuration Debug for project HAL_JOYSTICK ****
+make -j12 all 
+arm-none-eabi-size   HAL_JOYSTICK.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10864	     20	   1756	  12640	   3160	HAL_JOYSTICK.elf
+Finished building: default.size.stdout
+ 
+
+09:16:35 Build Finished. 0 errors, 0 warnings. (took 350ms)
+

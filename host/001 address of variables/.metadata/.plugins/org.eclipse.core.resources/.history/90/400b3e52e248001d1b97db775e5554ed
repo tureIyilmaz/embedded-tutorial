@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: 11 Eki 2022
+ *      Author: turel
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+char a[5]="Turel";
+char *pt[5];
+
+*pt[5] = a[5];
+
+
+return 0;
+}

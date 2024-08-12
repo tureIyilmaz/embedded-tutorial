@@ -1,0 +1,10 @@
+21:25:54 **** Incremental Build of configuration Debug for project 014_HAL_TIM_GATEDMODE ****
+make -j12 all 
+arm-none-eabi-size   014_HAL_TIM_GATEDMODE.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9104	     20	   1644	  10768	   2a10	014_HAL_TIM_GATEDMODE.elf
+Finished building: default.size.stdout
+ 
+
+21:25:55 Build Finished. 0 errors, 0 warnings. (took 401ms)
+

@@ -1,0 +1,10 @@
+19:51:13 **** Incremental Build of configuration Debug for project JOYSTICK ****
+make -j12 all 
+arm-none-eabi-size   JOYSTICK.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10864	     20	   1748	  12632	   3158	JOYSTICK.elf
+Finished building: default.size.stdout
+ 
+
+19:51:14 Build Finished. 0 errors, 0 warnings. (took 372ms)
+

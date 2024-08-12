@@ -1,0 +1,17 @@
+22:35:51 **** Incremental Build of configuration Debug for project 023_HAL_USART_RECEIVE_DATA ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "023_HAL_USART_RECEIVE_DATA.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Programlarim\Embedded C\My_workspace\target\023_HAL_USART_RECEIVE_DATA\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="023_HAL_USART_RECEIVE_DATA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 023_HAL_USART_RECEIVE_DATA.elf
+ 
+arm-none-eabi-size   023_HAL_USART_RECEIVE_DATA.elf 
+arm-none-eabi-objdump -h -S  023_HAL_USART_RECEIVE_DATA.elf  > "023_HAL_USART_RECEIVE_DATA.list"
+   text	   data	    bss	    dec	    hex	filename
+   8552	     20	   1692	  10264	   2818	023_HAL_USART_RECEIVE_DATA.elf
+Finished building: default.size.stdout
+ 
+Finished building: 023_HAL_USART_RECEIVE_DATA.list
+ 
+
+22:35:52 Build Finished. 0 errors, 0 warnings. (took 1s.49ms)
+

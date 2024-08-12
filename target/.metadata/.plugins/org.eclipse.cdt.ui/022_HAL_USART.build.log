@@ -1,0 +1,21 @@
+21:36:13 **** Incremental Build of configuration Debug for project 022_HAL_USART ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:91:14: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   91 |   tx_buff[0] = "Hello World";
+      |              ^
+arm-none-eabi-gcc -o "022_HAL_USART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Programlarim\Embedded C\My_workspace\target\022_HAL_USART\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="022_HAL_USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 022_HAL_USART.elf
+ 
+arm-none-eabi-size   022_HAL_USART.elf 
+arm-none-eabi-objdump -h -S  022_HAL_USART.elf  > "022_HAL_USART.list"
+   text	   data	    bss	    dec	    hex	filename
+   8040	     20	   1692	   9752	   2618	022_HAL_USART.elf
+Finished building: default.size.stdout
+ 
+Finished building: 022_HAL_USART.list
+ 
+
+21:36:14 Build Finished. 0 errors, 1 warnings. (took 1s.54ms)
+

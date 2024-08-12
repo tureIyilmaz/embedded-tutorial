@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: 11 Eki 2022
+ *      Author: turel
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+char a1='T';
+char a2='u';
+char a3='r';
+char a4='e';
+char a5='l';
+char *pt;
+pt=&a1;
+
+printf("%p\n",pt);
+printf("%p\n",&a2);
+printf("%p\n",&a3);
+printf("%p\n",&a4);
+printf("%p\n",&a5);
+
+return 0;
+}

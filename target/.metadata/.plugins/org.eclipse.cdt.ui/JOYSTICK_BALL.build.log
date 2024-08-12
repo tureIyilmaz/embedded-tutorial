@@ -1,0 +1,166 @@
+13:42:24 **** Build of configuration Debug for project JOYSTICK_BALL ****
+make -j12 all 
+arm-none-eabi-g++ "../TouchGFX/target/TouchGFXHAL.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"TouchGFX/target/TouchGFXHAL.d" -MT"TouchGFX/target/TouchGFXHAL.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "TouchGFX/target/TouchGFXHAL.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/images/src/SVGDatabase.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/SVGDatabase.d" -MT"Application/User/generated/SVGDatabase.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/SVGDatabase.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/Table_verdana_10_4bpp.d" -MT"Application/User/generated/Table_verdana_10_4bpp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/Table_verdana_10_4bpp.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/Table_verdana_20_4bpp.d" -MT"Application/User/generated/Table_verdana_20_4bpp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/Table_verdana_20_4bpp.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/Table_verdana_40_4bpp.d" -MT"Application/User/generated/Table_verdana_40_4bpp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/Table_verdana_40_4bpp.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/texts/src/Texts.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/Texts.d" -MT"Application/User/generated/Texts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/Texts.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/texts/src/TypedTextDatabase.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/TypedTextDatabase.d" -MT"Application/User/generated/TypedTextDatabase.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/TypedTextDatabase.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/fonts/src/UnmappedDataFont.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/UnmappedDataFont.d" -MT"Application/User/generated/UnmappedDataFont.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/UnmappedDataFont.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_round_micro_outline_action.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/image_alternate_theme_images_widgets_button_icon_round_micro_outline_action.d" -MT"Application/User/generated/image_alternate_theme_images_widgets_button_icon_round_micro_outline_action.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/image_alternate_theme_images_widgets_button_icon_round_micro_outline_action.o"
+arm-none-eabi-g++ "C:/TouchGFXProjects/JOYSTICK_BALL/TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DUSE_BPP=16 -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -I../../TouchGFX/generated/videos/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/generated/image_alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.d" -MT"Application/User/generated/image_alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/generated/image_alternate_theme_images_widgets_button_icon_round_micro_outline_pressed.o"
+../Core/Src/stm32f4xx_hal_msp.c:88:22: error: unknown type name 'ADC_HandleTypeDef'; did you mean 'LTDC_HandleTypeDef'?
+   88 | void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
+      |                      ^~~~~~~~~~~~~~~~~
+      |                      LTDC_HandleTypeDef
+../TouchGFX/target/TouchGFXHAL.cpp:92:6: error: no declaration matches 'bool TouchGFXHAL::blockCopy(void*, const void*, uint32_t)'
+   92 | bool TouchGFXHAL::blockCopy(void* RESTRICT dest, const void* RESTRICT src, uint32_t numBytes)
+      |      ^~~~~~~~~~~
+../TouchGFX/target/TouchGFXHAL.cpp:92:6: note: no functions named 'bool TouchGFXHAL::blockCopy(void*, const void*, uint32_t)'
+In file included from ../TouchGFX/target/TouchGFXHAL.cpp:23:
+../../TouchGFX/target/TouchGFXHAL.hpp:34:7: note: 'class TouchGFXHAL' defined here
+   34 | class TouchGFXHAL : public TouchGFXGeneratedHAL
+      |       ^~~~~~~~~~~
+../TouchGFX/target/TouchGFXHAL.cpp:151:6: error: no declaration matches 'bool TouchGFXHAL::beginFrame()'
+  151 | bool TouchGFXHAL::beginFrame()
+      |      ^~~~~~~~~~~
+../TouchGFX/target/TouchGFXHAL.cpp:151:6: note: no functions named 'bool TouchGFXHAL::beginFrame()'
+In file included from ../TouchGFX/target/TouchGFXHAL.cpp:23:
+../../TouchGFX/target/TouchGFXHAL.hpp:34:7: note: 'class TouchGFXHAL' defined here
+   34 | class TouchGFXHAL : public TouchGFXGeneratedHAL
+      |       ^~~~~~~~~~~
+../TouchGFX/target/TouchGFXHAL.cpp:156:6: error: no declaration matches 'void TouchGFXHAL::endFrame()'
+  156 | void TouchGFXHAL::endFrame()
+      |      ^~~~~~~~~~~
+../TouchGFX/target/TouchGFXHAL.cpp:156:6: note: no functions named 'void TouchGFXHAL::endFrame()'
+In file included from ../TouchGFX/target/TouchGFXHAL.cpp:23:
+../../TouchGFX/target/TouchGFXHAL.hpp:34:7: note: 'class TouchGFXHAL' defined here
+   34 | class TouchGFXHAL : public TouchGFXGeneratedHAL
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:45:1: error: unknown type name 'ADC_HandleTypeDef'; did you mean 'LTDC_HandleTypeDef'?
+   45 | ADC_HandleTypeDef hadc1;
+      | ^~~~~~~~~~~~~~~~~
+      | LTDC_HandleTypeDef
+../Core/Src/stm32f4xx_hal_msp.c:141:24: error: unknown type name 'ADC_HandleTypeDef'; did you mean 'LTDC_HandleTypeDef'?
+  141 | void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
+      |                        ^~~~~~~~~~~~~~~~~
+      |                        LTDC_HandleTypeDef
+../Core/Src/main.c:103:31: error: unknown type name 'ADC_HandleTypeDef'; did you mean 'LTDC_HandleTypeDef'?
+  103 | void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+      |                               ^~~~~~~~~~~~~~~~~
+      |                               LTDC_HandleTypeDef
+make: *** [TouchGFX/target/subdir.mk:25: TouchGFX/target/TouchGFXHAL.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:34: Core/Src/stm32f4xx_hal_msp.o] Error 1
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:150:3: warning: implicit declaration of function 'HAL_ADC_Start_DMA'; did you mean 'HAL_TIM_IC_Start_DMA'? [-Wimplicit-function-declaration]
+  150 |   HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adcValue, 2);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_TIM_IC_Start_DMA
+../Core/Src/main.c: In function 'MX_ADC1_Init':
+../Core/Src/main.c:258:3: error: unknown type name 'ADC_ChannelConfTypeDef'; did you mean 'ADC_Common_TypeDef'?
+  258 |   ADC_ChannelConfTypeDef sConfig = {0};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ADC_Common_TypeDef
+../Core/Src/main.c:266:8: error: request for member 'Instance' in something not a structure or union
+  266 |   hadc1.Instance = ADC1;
+      |        ^
+../Core/Src/main.c:267:8: error: request for member 'Init' in something not a structure or union
+  267 |   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
+      |        ^
+../Core/Src/main.c:267:31: error: 'ADC_CLOCK_SYNC_PCLK_DIV4' undeclared (first use in this function); did you mean 'ADC_CLOCKPRESCALER_PCLK_DIV4'?
+  267 |   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                               ADC_CLOCKPRESCALER_PCLK_DIV4
+../Core/Src/main.c:267:31: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:268:8: error: request for member 'Init' in something not a structure or union
+  268 |   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+      |        ^
+../Core/Src/main.c:268:27: error: 'ADC_RESOLUTION_12B' undeclared (first use in this function); did you mean 'ADC_RESOLUTION12b'?
+  268 |   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+      |                           ^~~~~~~~~~~~~~~~~~
+      |                           ADC_RESOLUTION12b
+../Core/Src/main.c:269:8: error: request for member 'Init' in something not a structure or union
+  269 |   hadc1.Init.ScanConvMode = ENABLE;
+      |        ^
+../Core/Src/main.c:270:8: error: request for member 'Init' in something not a structure or union
+  270 |   hadc1.Init.ContinuousConvMode = ENABLE;
+      |        ^
+../Core/Src/main.c:271:8: error: request for member 'Init' in something not a structure or union
+  271 |   hadc1.Init.DiscontinuousConvMode = DISABLE;
+      |        ^
+../Core/Src/main.c:272:8: error: request for member 'Init' in something not a structure or union
+  272 |   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+      |        ^
+../Core/Src/main.c:272:37: error: 'ADC_EXTERNALTRIGCONVEDGE_NONE' undeclared (first use in this function); did you mean 'ADC_EXTERNALTRIG_EDGE_NONE'?
+  272 |   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                     ADC_EXTERNALTRIG_EDGE_NONE
+../Core/Src/main.c:273:8: error: request for member 'Init' in something not a structure or union
+  273 |   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+      |        ^
+../Core/Src/main.c:273:33: error: 'ADC_SOFTWARE_START' undeclared (first use in this function)
+  273 |   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+      |                                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:274:8: error: request for member 'Init' in something not a structure or union
+  274 |   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+      |        ^
+../Core/Src/main.c:274:26: error: 'ADC_DATAALIGN_RIGHT' undeclared (first use in this function)
+  274 |   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+      |                          ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:275:8: error: request for member 'Init' in something not a structure or union
+  275 |   hadc1.Init.NbrOfConversion = 2;
+      |        ^
+../Core/Src/main.c:276:8: error: request for member 'Init' in something not a structure or union
+  276 |   hadc1.Init.DMAContinuousRequests = ENABLE;
+      |        ^
+../Core/Src/main.c:277:8: error: request for member 'Init' in something not a structure or union
+  277 |   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+      |        ^
+../Core/Src/main.c:277:29: error: 'ADC_EOC_SINGLE_CONV' undeclared (first use in this function); did you mean 'EOC_SINGLE_CONV'?
+  277 |   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+      |                             ^~~~~~~~~~~~~~~~~~~
+      |                             EOC_SINGLE_CONV
+../Core/Src/main.c:278:7: warning: implicit declaration of function 'HAL_ADC_Init'; did you mean 'HAL_LTDC_Init'? [-Wimplicit-function-declaration]
+  278 |   if (HAL_ADC_Init(&hadc1) != HAL_OK)
+      |       ^~~~~~~~~~~~
+      |       HAL_LTDC_Init
+../Core/Src/main.c:285:10: error: request for member 'Channel' in something not a structure or union
+  285 |   sConfig.Channel = ADC_CHANNEL_14;
+      |          ^
+../Core/Src/main.c:285:21: error: 'ADC_CHANNEL_14' undeclared (first use in this function); did you mean 'DAC2_CHANNEL_1'?
+  285 |   sConfig.Channel = ADC_CHANNEL_14;
+      |                     ^~~~~~~~~~~~~~
+      |                     DAC2_CHANNEL_1
+../Core/Src/main.c:286:10: error: request for member 'Rank' in something not a structure or union
+  286 |   sConfig.Rank = 1;
+      |          ^
+../Core/Src/main.c:287:10: error: request for member 'SamplingTime' in something not a structure or union
+  287 |   sConfig.SamplingTime = ADC_SAMPLETIME_144CYCLES;
+      |          ^
+../Core/Src/main.c:287:26: error: 'ADC_SAMPLETIME_144CYCLES' undeclared (first use in this function); did you mean 'ADC_SAMPLETIME_2CYCLE_5'?
+  287 |   sConfig.SamplingTime = ADC_SAMPLETIME_144CYCLES;
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                          ADC_SAMPLETIME_2CYCLE_5
+../Core/Src/main.c:288:7: warning: implicit declaration of function 'HAL_ADC_ConfigChannel'; did you mean 'HAL_TIM_IC_ConfigChannel'? [-Wimplicit-function-declaration]
+  288 |   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+      |       ^~~~~~~~~~~~~~~~~~~~~
+      |       HAL_TIM_IC_ConfigChannel
+../Core/Src/main.c:295:10: error: request for member 'Channel' in something not a structure or union
+  295 |   sConfig.Channel = ADC_CHANNEL_15;
+      |          ^
+../Core/Src/main.c:295:21: error: 'ADC_CHANNEL_15' undeclared (first use in this function); did you mean 'DAC2_CHANNEL_1'?
+  295 |   sConfig.Channel = ADC_CHANNEL_15;
+      |                     ^~~~~~~~~~~~~~
+      |                     DAC2_CHANNEL_1
+../Core/Src/main.c:296:10: error: request for member 'Rank' in something not a structure or union
+  296 |   sConfig.Rank = 2;
+      |          ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+13:42:27 Build Failed. 38 errors, 3 warnings. (took 2s.521ms)
+

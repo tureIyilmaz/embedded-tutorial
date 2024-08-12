@@ -1,0 +1,10 @@
+22:39:40 **** Incremental Build of configuration Debug for project 027_HAL_SPI_NOKIA5110 ****
+make -j12 all 
+arm-none-eabi-size   027_HAL_SPI_NOKIA5110.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16028	     20	   2260	  18308	   4784	027_HAL_SPI_NOKIA5110.elf
+Finished building: default.size.stdout
+ 
+
+22:39:40 Build Finished. 0 errors, 0 warnings. (took 396ms)
+

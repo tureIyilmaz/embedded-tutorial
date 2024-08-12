@@ -1,0 +1,57 @@
+08:54:40 **** Incremental Build of configuration Debug for project fmhjkl ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c ..\src\main.c -mthumb -mcpu=cortex-m0plus -std=gnu11 -DSTM32G070xx -I../src -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/STM32G0xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o src\main.o 
+..\src\main.c:34:1: error: unknown type name 'GPIO_InitTypeDef'
+ GPIO_InitTypeDef GPIO_InitStruct;
+ ^~~~~~~~~~~~~~~~
+..\src\main.c: In function 'main':
+..\src\main.c:44:4: warning: implicit declaration of function 'GPIO_SetBits' [-Wimplicit-function-declaration]
+    GPIO_SetBits(GPIOC, GPIO_Pin_7);
+    ^~~~~~~~~~~~
+..\src\main.c:44:24: error: 'GPIO_Pin_7' undeclared (first use in this function)
+    GPIO_SetBits(GPIOC, GPIO_Pin_7);
+                        ^~~~~~~~~~
+..\src\main.c:44:24: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:46:4: warning: implicit declaration of function 'GPIO_ResetBits' [-Wimplicit-function-declaration]
+    GPIO_ResetBits(GPIOC, GPIO_Pin_7);
+    ^~~~~~~~~~~~~~
+..\src\main.c: In function 'GPIO_Config':
+..\src\main.c:54:2: warning: implicit declaration of function 'RCC_AHB1PeriphClockCmd' [-Wimplicit-function-declaration]
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+  ^~~~~~~~~~~~~~~~~~~~~~
+..\src\main.c:54:25: error: 'RCC_AHB1Periph_GPIOC' undeclared (first use in this function)
+  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
+                         ^~~~~~~~~~~~~~~~~~~~
+..\src\main.c:56:17: error: request for member 'GPIO_Pin' in something not a structure or union
+  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_7;
+                 ^
+..\src\main.c:56:29: error: 'GPIO_Pin_7' undeclared (first use in this function)
+  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_7;
+                             ^~~~~~~~~~
+..\src\main.c:57:17: error: request for member 'GPIO_Mode' in something not a structure or union
+  GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
+                 ^
+..\src\main.c:57:30: error: 'GPIO_Mode_OUT' undeclared (first use in this function)
+  GPIO_InitStruct.GPIO_Mode = GPIO_Mode_OUT;
+                              ^~~~~~~~~~~~~
+..\src\main.c:58:17: error: request for member 'GPIO_OType' in something not a structure or union
+  GPIO_InitStruct.GPIO_OType = GPIO_OType_OD;
+                 ^
+..\src\main.c:58:31: error: 'GPIO_OType_OD' undeclared (first use in this function)
+  GPIO_InitStruct.GPIO_OType = GPIO_OType_OD;
+                               ^~~~~~~~~~~~~
+..\src\main.c:59:17: error: request for member 'GPIO_PuPd' in something not a structure or union
+  GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
+                 ^
+..\src\main.c:59:30: error: 'GPIO_PuPd_NOPULL' undeclared (first use in this function)
+  GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_NOPULL;
+                              ^~~~~~~~~~~~~~~~
+..\src\main.c:60:17: error: request for member 'GPIO_Speed' in something not a structure or union
+  GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+                 ^
+..\src\main.c:60:31: error: 'GPIO_Speed_100MHz' undeclared (first use in this function)
+  GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+                               ^~~~~~~~~~~~~~~~~
+..\src\main.c:62:2: warning: implicit declaration of function 'GPIO_Init' [-Wimplicit-function-declaration]
+  GPIO_Init(GPIOC, &GPIO_InitStruct);
+  ^~~~~~~~~

@@ -1,0 +1,10 @@
+01:05:48 **** Incremental Build of configuration Debug for project 033_HAL_MAX6675 ****
+make -j12 all 
+arm-none-eabi-size   033_HAL_MAX6675.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12488	     20	   1852	  14360	   3818	033_HAL_MAX6675.elf
+Finished building: default.size.stdout
+ 
+
+01:05:49 Build Finished. 0 errors, 0 warnings. (took 736ms)
+

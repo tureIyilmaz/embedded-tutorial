@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SPL025I2C_LCDDisplay/src/lcd_config&apos; to &apos;lcd_config.h&apos;" description="Rename resource &apos;lcd_config&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/lcd_config" name="lcd_config.h" stamp="1689628772516" updateReferences="true"/>
+</session>

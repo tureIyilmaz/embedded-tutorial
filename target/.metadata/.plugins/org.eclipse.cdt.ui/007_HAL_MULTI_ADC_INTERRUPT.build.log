@@ -1,0 +1,10 @@
+00:40:23 **** Incremental Build of configuration Debug for project 007_HAL_MULTI_ADC_INTERRUPT ****
+make -j12 all 
+arm-none-eabi-size   007_HAL_MULTI_ADC_INTERRUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9172	     20	   1748	  10940	   2abc	007_HAL_MULTI_ADC_INTERRUPT.elf
+Finished building: default.size.stdout
+ 
+
+00:40:23 Build Finished. 0 errors, 0 warnings. (took 407ms)
+

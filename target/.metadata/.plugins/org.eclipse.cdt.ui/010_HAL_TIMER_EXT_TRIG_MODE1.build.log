@@ -1,0 +1,10 @@
+15:26:16 **** Incremental Build of configuration Debug for project 010_HAL_TIMER_EXT_TRIG_MODE1 ****
+make -j12 all 
+arm-none-eabi-size   010_HAL_TIMER_EXT_TRIG_MODE1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7800	     20	   1644	   9464	   24f8	010_HAL_TIMER_EXT_TRIG_MODE1.elf
+Finished building: default.size.stdout
+ 
+
+15:26:16 Build Finished. 0 errors, 0 warnings. (took 339ms)
+

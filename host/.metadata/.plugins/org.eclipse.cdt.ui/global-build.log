@@ -1,0 +1,17 @@
+15:58:38 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:11:30: warning: 'I' flag used with '%x' gnu_printf format [-Wformat=]
+   11 |         printf("Product= %I64x\n",math_mul(0X0FFF1111,0X0FFF1111));
+      |                              ^
+..\main.c:11:30: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long long int' [-Wformat=]
+   11 |         printf("Product= %I64x\n",math_mul(0X0FFF1111,0X0FFF1111));
+      |                          ~~~~^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              |    |
+      |                              |    long long int
+      |                              unsigned int
+      |                          %I64llx
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o math.o "..\\math.c" 
+gcc -o math.exe main.o math.o 
+Info: Nothing to build for math

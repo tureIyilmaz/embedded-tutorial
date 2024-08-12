@@ -1,0 +1,10 @@
+20:09:51 **** Incremental Build of configuration Debug for project Motor_Driver_L298N ****
+make -j12 all 
+arm-none-eabi-size   Motor_Driver_L298N.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8704	     20	   1644	  10368	   2880	Motor_Driver_L298N.elf
+Finished building: default.size.stdout
+ 
+
+20:09:52 Build Finished. 0 errors, 0 warnings. (took 362ms)
+

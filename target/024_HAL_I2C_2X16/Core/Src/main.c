@@ -1,0 +1,143 @@
+#include "main.h"
+#include "stm32f4xx_hal.h"
+
+I2C_HandleTypeDef hi2c1;
+
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_I2C1_Init(void);
+
+#define LCD_ADDRESS (0x27 << 1)  // I2C address of the LCD display
+
+// LCD commands
+#define LCD_COMMAND_CLEAR_DISPLAY 0x01
+#define LCD_COMMAND_RETURN_HOME 0x02
+#define LCD_COMMAND_ENTRY_MODE 0x04
+#define LCD_COMMAND_DISPLAY_CTRL 0x08
+#define LCD_COMMAND_CURSOR_SHIFT 0x10
+#define LCD_COMMAND_FUNCTION_SET 0x20
+#define LCD_COMMAND_SET_CGRAM_ADDR 0x40
+#define LCD_COMMAND_SET_DDRAM_ADDR 0x80
+
+// Display control flags
+#define LCD_FLAG_DISPLAY_ON 0x04
+#define LCD_FLAG_CURSOR_ON 0x02
+#define LCD_FLAG_BLINK_ON 0x01
+
+void LCD_SendCommand(uint8_t command);
+void LCD_SendData(uint8_t data);
+void LCD_SendString(const char* str);
+
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+  MX_I2C1_Init();
+
+  HAL_Delay(100);  // Delay for I2C initialization
+
+  // LCD initialization sequence
+  LCD_SendCommand(LCD_COMMAND_FUNCTION_SET | 0x08);  // 2 lines, 5x8 font
+  LCD_SendCommand(LCD_COMMAND_DISPLAY_CTRL | LCD_FLAG_DISPLAY_ON);  // Display on
+  LCD_SendCommand(LCD_COMMAND_CLEAR_DISPLAY);  // Clear display
+  LCD_SendCommand(LCD_COMMAND_ENTRY_MODE | 0x02);  // Increment cursor
+
+  LCD_SendString("Hello, LCD!");
+
+  while (1)
+  {
+  }
+}
+
+void LCD_SendCommand(uint8_t command)
+{
+  uint8_t buffer[2];
+  buffer[0] = 0x00;  // Control byte for command
+  buffer[1] = command;
+
+  HAL_I2C_Master_Transmit(&hi2c1, LCD_ADDRESS, buffer, 2, HAL_MAX_DELAY);
+  HAL_Delay(1);  // Delay for command execution
+}
+
+void LCD_SendData(uint8_t data)
+{
+  uint8_t buffer[2];
+  buffer[0] = 0x40;  // Control byte for data
+  buffer[1] = data;
+
+  HAL_I2C_Master_Transmit(&hi2c1, LCD_ADDRESS, buffer, 2, HAL_MAX_DELAY);
+  HAL_Delay(1);  // Delay for data execution
+}
+
+void LCD_SendString(const char* str)
+{
+  while (*str)
+  {
+    LCD_SendData((uint8_t)(*str++));
+  }
+}
+
+void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct;
+  RCC_ClkInitTypeDef RCC_ClkInitStruct;
+
+  __HAL_RCC_PWR_CLK_ENABLE();
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+  RCC_OscInitStruct.PLL.PLLM = 8;
+  RCC_OscInitStruct.PLL.PLLN = 336;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLQ = 4;
+  HAL_RCC_OscConfig(&RCC_OscInitStruct);
+
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK |
+                                RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
+  HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5);
+
+  HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq() / 1000);
+
+  HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
+
+  HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+
+  // SysTick_IRQn interrupt configuration
+  HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
+}
+
+static void MX_I2C1_Init(void)
+{
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.ClockSpeed = 400000;
+  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  HAL_I2C_Init(&hi2c1);
+}
+
+void MX_GPIO_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStruct;
+
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  GPIO_InitStruct.Pin = GPIO_PIN_6 | GPIO_PIN_7;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+  GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+}

@@ -1,0 +1,10 @@
+00:49:46 **** Incremental Build of configuration Debug for project 030_HAL_NOKIA_PIR ****
+make -j12 all 
+arm-none-eabi-size   030_HAL_NOKIA_PIR.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10120	     20	   2260	  12400	   3070	030_HAL_NOKIA_PIR.elf
+Finished building: default.size.stdout
+ 
+
+00:49:47 Build Finished. 0 errors, 0 warnings. (took 385ms)
+

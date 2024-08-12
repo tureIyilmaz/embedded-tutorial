@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;035_HAL_LED_BLINK&apos;" deleteContents="false" description="Delete resource &apos;035_HAL_LED_BLINK&apos;" element1="/035_HAL_LED_BLINK" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1691582696606"/>
+</session>

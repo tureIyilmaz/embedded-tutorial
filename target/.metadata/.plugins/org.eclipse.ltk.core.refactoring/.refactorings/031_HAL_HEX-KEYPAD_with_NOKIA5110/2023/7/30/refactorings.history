@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;031_HAL_HEX-KEYPAD_with_NOKIA5110/Core/Src/keypad3x4.c&apos; to &apos;keypad4x3.c&apos;" description="Rename resource &apos;keypad3x4.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/keypad3x4.c" name="keypad4x3.c" stamp="1690210217880" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;031_HAL_HEX-KEYPAD_with_NOKIA5110/Core/Src/keypad3x4.h&apos; to &apos;keypad4x3.h&apos;" description="Rename resource &apos;keypad3x4.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/keypad3x4.h" name="keypad4x3.h" stamp="1690210228596" updateReferences="true"/>
+</session>

@@ -1,0 +1,10 @@
+09:34:25 **** Incremental Build of configuration Debug for project 029_HAL_PIR ****
+make -j12 all 
+arm-none-eabi-size   029_HAL_PIR.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5976	     20	   1572	   7568	   1d90	029_HAL_PIR.elf
+Finished building: default.size.stdout
+ 
+
+09:34:26 Build Finished. 0 errors, 0 warnings. (took 330ms)
+

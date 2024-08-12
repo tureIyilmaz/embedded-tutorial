@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="SM_Length"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="SM_RegisterLength"/>
+			<item value="tx_data"/>
+			<item value="32"/>
+			<item value="received_data_length"/>
+			<item value="02E1"/>
+			<item value="AddressOfFirstBoolean"/>
+			<item value="SM_Exception"/>
+			<item value="WriteMultipleCoils"/>
+			<item value="Write_Multiple_Registers"/>
+			<item value="Write_Multiple_Coils"/>
+			<item value="Write_Single_Register"/>
+			<item value="SM_WriteAdressing"/>
+			<item value="SM_Length"/>
+			<item value="SM_ReadAdressing"/>
+			<item value="SM_NumberOfBooleans"/>
+		</list>
+		<list key="replacehistory">
+			<item value="SM_Length"/>
+			<item value="tx_buffer"/>
+			<item value="WriteMultipleRegisters"/>
+			<item value="WriteMultipleCoils"/>
+			<item value="WriteSingleRegister"/>
+			<item value="SM_WriteRegisterAdressing"/>
+			<item value="SM_RegisterLength"/>
+			<item value="SM_ReadRegisterAdressing"/>
+			<item value="SM_BooleanLength"/>
+			<item value="SM_ReadBooleanAdressing"/>
+			<item value="SM_Read"/>
+			<item value="SM_RegisterValue"/>
+			<item value="SM_Value"/>
+			<item value="NumberOfDataBytes"/>
+			<item value="NumberOfData"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="0"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="1938"/>
+		<item key="DIALOG_HEIGHT" value="1038"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

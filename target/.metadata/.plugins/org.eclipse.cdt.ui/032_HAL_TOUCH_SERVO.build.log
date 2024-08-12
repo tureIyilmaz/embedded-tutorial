@@ -1,0 +1,10 @@
+09:14:05 **** Incremental Build of configuration Debug for project 032_HAL_TOUCH_SERVO ****
+make -j12 all 
+arm-none-eabi-size   032_HAL_TOUCH_SERVO.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8828	     20	   1644	  10492	   28fc	032_HAL_TOUCH_SERVO.elf
+Finished building: default.size.stdout
+ 
+
+09:14:06 Build Finished. 0 errors, 0 warnings. (took 332ms)
+

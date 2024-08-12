@@ -1,0 +1,38 @@
+/*
+ * modbus.c
+ *
+ *  Created on: Aug 8, 2023
+ *      Author: turel
+ */
+
+#include "modebus.h"
+
+
+uint8_t buffer_rx[8];
+
+
+
+
+uint16_t modbusRtuCRC(uint8_t buff, int length)
+{
+	uint16_t crc = 0xFFFF;
+
+	for (int pos = 0; pos < len; pos++)
+	{
+		crc ^= (UInt16)buf[pos];
+
+	    for (int i = 8; i != 0; i--)
+	    {
+	    	if ((crc & 0x0001) != 0)
+	    	{
+	    		crc >>= 1;
+	    		crc ^= 0xA001;
+	    	}
+	    	else
+	    	{
+	    		crc >>= 1;
+	    	}
+	    }
+	  }
+	  return crc;
+}

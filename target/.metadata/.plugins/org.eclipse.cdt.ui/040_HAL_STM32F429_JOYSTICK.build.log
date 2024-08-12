@@ -1,0 +1,10 @@
+09:27:40 **** Incremental Build of configuration Debug for project 040_HAL_STM32F429_JOYSTICK ****
+make -j12 all 
+arm-none-eabi-size   040_HAL_STM32F429_JOYSTICK.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10892	     20	   1756	  12668	   317c	040_HAL_STM32F429_JOYSTICK.elf
+Finished building: default.size.stdout
+ 
+
+09:27:40 Build Finished. 0 errors, 0 warnings. (took 372ms)
+

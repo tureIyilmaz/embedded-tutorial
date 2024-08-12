@@ -1,0 +1,10 @@
+11:31:17 **** Incremental Build of configuration Debug for project 036_HAL_LED_BLINK ****
+make -j12 all 
+arm-none-eabi-size   036_HAL_LED_BLINK.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11440	     20	   1820	  13280	   33e0	036_HAL_LED_BLINK.elf
+Finished building: default.size.stdout
+ 
+
+11:31:18 Build Finished. 0 errors, 0 warnings. (took 360ms)
+

@@ -1,0 +1,10 @@
+19:47:55 **** Incremental Build of configuration Debug for project 026_HAL_I2C_ADXL345 ****
+make -j12 all 
+arm-none-eabi-size   026_HAL_I2C_ADXL345.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7508	     20	   1660	   9188	   23e4	026_HAL_I2C_ADXL345.elf
+Finished building: default.size.stdout
+ 
+
+19:47:56 Build Finished. 0 errors, 0 warnings. (took 400ms)
+

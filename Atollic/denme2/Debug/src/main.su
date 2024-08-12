@@ -1,0 +1,8 @@
+main.c:22:5:main	32	static
+main.c:64:6:I2C_LCD_Init	8	static
+main.c:87:6:I2C_LCD_SendCommand	24	static
+main.c:111:6:I2C_LCD_SendData	24	static
+main.c:135:6:I2C_LCD_SendString	16	static
+main.c:141:6:delay_ms	16	static
+main.c:146:6:EVAL_AUDIO_TransferComplete_CallBack	16	static
+main.c:152:10:EVAL_AUDIO_GetSampleCallBack	4	static

@@ -1,0 +1,14 @@
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include "math.h"
+
+
+int main()
+
+{
+	printf("Product=%lld",math_mul(0X0FFF1111,0X0FFF1111));
+
+	return 0;
+}

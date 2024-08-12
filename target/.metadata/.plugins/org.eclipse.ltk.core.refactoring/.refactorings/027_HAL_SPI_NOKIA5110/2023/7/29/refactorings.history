@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;027_HAL_SPI_NOKIA5110/Core/Src/nokia510.h&apos; to &apos;nokia5110.h&apos;" description="Rename resource &apos;nokia510.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/nokia510.h" name="nokia5110.h" stamp="1689874626256" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;027_HAL_SPI_NOKIA5110/Core/Src/nokia5510.c&apos; to &apos;nokia5110.c&apos;" description="Rename resource &apos;nokia5510.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/nokia5510.c" name="nokia5110.c" stamp="1689874633900" updateReferences="true"/>
+</session>

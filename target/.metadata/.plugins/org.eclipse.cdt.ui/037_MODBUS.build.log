@@ -1,0 +1,38 @@
+00:25:33 **** Build of configuration Debug for project 037_MODBUS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/modbus.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/modbus.d" -MT"Core/Src/modbus.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/modbus.o"
+../Core/Src/modbus.c: In function 'ModbusReadHoldingRegisters':
+../Core/Src/modbus.c:46:46: error: 'NUMBER_OF_OUTPUT_REGISTERS' undeclared (first use in this function)
+   46 |         if(startAddress + NumberOfRegisters> NUMBER_OF_OUTPUT_REGISTERS)
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/modbus.c:46:46: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/modbus.c:54:54: error: 'Registers' undeclared (first use in this function)
+   54 |                         unsigned short currentData = Registers[startAddress + i].ActValue;
+      |                                                      ^~~~~~~~~
+../Core/Src/modbus.c: In function 'ProcessModbus':
+../Core/Src/modbus.c:112:9: warning: implicit declaration of function 'RxDataAvailable' [-Wimplicit-function-declaration]
+  112 |     if (RxDataAvailable())
+      |         ^~~~~~~~~~~~~~~
+../Core/Src/modbus.c: In function 'DoSlaveTx':
+../Core/Src/modbus.c:144:9: warning: implicit declaration of function 'ModBus_UART_String' [-Wimplicit-function-declaration]
+  144 |         ModBus_UART_String(Tx_Buf,Tx_Buf_Size);
+      |         ^~~~~~~~~~~~~~~~~~
+../Core/Src/modbus.c: In function 'RxRTU':
+../Core/Src/modbus.c:155:30: warning: implicit declaration of function 'CheckModbusBufferComplete' [-Wimplicit-function-declaration]
+  155 |     ReceiveBufferControl    =CheckModbusBufferComplete();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/modbus.c:159:38: error: 'ReceiveBuffer' undeclared (first use in this function); did you mean 'ReceiveBufferControl'?
+  159 |         Rx_Data.modbusSlaveAddress = ReceiveBuffer[0];
+      |                                      ^~~~~~~~~~~~~
+      |                                      ReceiveBufferControl
+../Core/Src/modbus.c:161:9: warning: implicit declaration of function 'modbusRtuCRC' [-Wimplicit-function-declaration]
+  161 |         modbusRtuCRC(Rx_Data.modbusSlaveAddress, &Rx_CRC16);
+      |         ^~~~~~~~~~~~
+../Core/Src/modbus.c:167:24: error: 'ReceiveCounter' undeclared (first use in this function)
+  167 |         for(i = 2; i < ReceiveCounter ; i++)
+      |                        ^~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/modbus.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+00:25:34 Build Failed. 5 errors, 4 warnings. (took 538ms)
+

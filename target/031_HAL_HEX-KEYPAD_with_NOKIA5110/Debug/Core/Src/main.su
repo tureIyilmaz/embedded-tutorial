@@ -1,0 +1,8 @@
+../Core/Src/main.c:87:5:main	48	static
+../Core/Src/main.c:220:6:SystemClock_Config	88	static
+../Core/Src/main.c:267:13:MX_SPI2_Init	8	static
+../Core/Src/main.c:303:13:MX_DMA_Init	16	static
+../Core/Src/main.c:321:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:351:6:checkPassword	24	static
+../Core/Src/main.c:363:6:displayPassword	16	static
+../Core/Src/main.c:380:6:Error_Handler	4	static,ignoring_inline_asm

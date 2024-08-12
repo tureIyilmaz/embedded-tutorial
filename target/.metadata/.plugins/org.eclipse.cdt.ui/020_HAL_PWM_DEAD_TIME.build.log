@@ -1,0 +1,10 @@
+22:09:08 **** Incremental Build of configuration Debug for project 020_HAL_PWM_DEAD_TIME ****
+make -j12 all 
+arm-none-eabi-size   020_HAL_PWM_DEAD_TIME.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9344	     20	   1644	  11008	   2b00	020_HAL_PWM_DEAD_TIME.elf
+Finished building: default.size.stdout
+ 
+
+22:09:08 Build Finished. 0 errors, 0 warnings. (took 387ms)
+
